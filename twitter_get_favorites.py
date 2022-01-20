@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     df_favs = pd.DataFrame(columns=['id','user','created_at','text','favorite_count','retweet_count','source'])
 
-    for pg in range(50): #1271
+    for pg in range(1271): # When appending, this value might be smaller depending on the amout of tweets 
         print (pg)
         result_set = client.get_favorites(id='your_username',page=pg)
         for status in result_set:
