@@ -28,7 +28,7 @@ if __name__ == '__main__':
             df_favs = df_favs.append(tweet,ignore_index=True)
 
     # On first execution, comment line 31 and leave 30
-    # After you already have a csv, and only appends to it, comment line 30 and leave 31
+    # After you already have a csv and only append to it, comment line 30 and leave 31
     df_favs.to_csv('my-twitter-favs.csv', index=False)
     df_favs.to_csv('my-twitter-favs.csv', mode='a', header=False, index=False)
 
